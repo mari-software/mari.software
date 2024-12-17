@@ -1,0 +1,26 @@
+/* Styling for the raised-button attribute */
+button[raised-button] {
+    background-color: var(--primary-90); /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: var(--pixel-small) var(--pixel-medium); /* Button padding */
+    text-align: center; /* Center text */
+    display: inline-block; /* Allow inline-block display */
+    border-radius: var(--pixel-small); /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 3px 5px 5px var(--white-50); /* Elevated shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+button[raised-button]:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow */
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Active effect (when button is clicked) */
+button[raised-button]:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow shrinks */
+    background-color: #397d3a; /* Even darker green */
+}
+
